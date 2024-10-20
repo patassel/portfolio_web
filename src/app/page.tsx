@@ -1,13 +1,13 @@
 "use client"; // Indique que ce composant doit être rendu côté client
 
 import React, { useState } from "react"; // Importer React et useState
-import ParticlesContainer from "@/components/animations/particles";
-import SocialIcons from "@/components/links";
+import ParticlesContainer from "../components/animations/particles";
+import SocialIcons from "../components/links";
 import { motion } from "framer-motion";
-import styles from "@/styles/home.module.css";
-import { HeroSection } from "@/components/hero/mask";
-import AlertDialog from "@/components/dialog"; // Importation du composant AlertDialog
-import NavigationTabs from "@/components/tab-navigation";
+import styles from "../styles/home.module.css";
+import AlertDialog from "../components/dialog"; // Importation du composant AlertDialog
+import NavigationTabs from "../components/tab-navigation";
+import { HeroSection } from "../components/hero/mask";
 
 export default function Home() {
   const [isDialogOpen, setDialogOpen] = useState(false);

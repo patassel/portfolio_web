@@ -46,7 +46,7 @@ export const HeroSection = () => {
           width={imageSize.width}
           height={imageSize.height}
           layout="intrinsic" // Choisissez le layout qui vous convient
-          quality={100} // Option pour définir la qualité de l'image à 100%
+          unoptimized
         />
       </motion.div>
     </div>

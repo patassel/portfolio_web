@@ -36,7 +36,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative w-[60%] h-[80%]">
+    <div className="relative w-[80%] h-[60%]">
       {/* Container pour gérer l'image */}
       <motion.div
         className="w-full h-full" // S'assurer que le conteneur de l'image prend tout l'espace

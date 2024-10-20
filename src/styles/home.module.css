@@ -1,0 +1,10 @@
+/* styles/Home.module.css */
+.container {
+  @apply min-h-screen flex flex-col bg-darkGreen text-gray-100 relative; /* Utilisation du vert sombre pour le fond */
+}
+
+.header {
+  @apply absolute top-0 left-0 right-0 flex justify-end p-4 bg-transparent z-10;
+}
+
+/* Ajoute d'autres styles si nécessaire */

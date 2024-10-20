@@ -17,8 +17,9 @@
         "name": "next"
       }
     ],
+    "baseUrl": "./src", // Cela définit la base pour les chemins relatifs
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["*"] // L'alias @ pointe vers src/
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

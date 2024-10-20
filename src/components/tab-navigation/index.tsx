@@ -30,7 +30,7 @@ const NavigationTabs: React.FC<NavigationProps> = ({ onOpenDialog }) => {
                       message = "Projects page is under construction."; // Message pour "Projects"
                       break;
                     case "Skills":
-                      message = "Skills page is coming soon."; // Message pour "Skills"
+                      message = "Skills page is under construction."; // Message pour "Skills"
                       break;
                     case "Blog":
                       message = "Blog page is under construction."; // Message pour "Blog"

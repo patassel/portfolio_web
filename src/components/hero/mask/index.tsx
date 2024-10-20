@@ -3,11 +3,14 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion"; // Assurez-vous d'importer framer-motion si vous l'utilisez pour les animations
 import Image from "next/image";
+import hero from "../../../../public/maskOff.png";
 
 export const HeroSection = () => {
   // Lien direct de l'image depuis Google Drive
-  const HeroImage =
-    "https://drive.google.com/uc?export=view&id=1CVle6Scn-mYCeCvq5XQl_TgalC2VPF6Y";
+  // const HeroImage =
+  //   "https://drive.google.com/uc?export=view&id=1CVle6Scn-mYCeCvq5XQl_TgalC2VPF6Y";
+
+  const HeroImage = "";
 
   const [imageSize, setImageSize] = useState({ width: 402, height: 300 }); // Ajustez ici pour la hauteur
 
@@ -42,7 +45,7 @@ export const HeroSection = () => {
         transition={{ delay: 0.6, duration: 0.7 }} // Délai et durée
       >
         <Image
-          src={HeroImage}
+          src={hero}
           alt="Hero"
           width={imageSize.width}
           height={imageSize.height}

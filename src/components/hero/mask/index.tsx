@@ -1,11 +1,13 @@
 // HeroSection.jsx ou HeroSection.tsx
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion"; // Assurez-vous d'importer framer-motion si vous l'utilisez pour les animations
+import Image from "next/image";
 
 export const HeroSection = () => {
-  const HeroImage = "/images/mask-OFF.png"; // Chemin relatif vers votre image
+  // Lien direct de l'image depuis Google Drive
+  const HeroImage =
+    "https://drive.google.com/uc?id=1CVle6Scn-mYCeCvq5XQl_TgalC2VPF6Y";
 
   const [imageSize, setImageSize] = useState({ width: 402, height: 300 }); // Ajustez ici pour la hauteur
 
@@ -32,7 +34,6 @@ export const HeroSection = () => {
 
   return (
     <div className="relative w-[60%] h-[80%]">
-      {" "}
       {/* Container pour gérer l'image */}
       <motion.div
         className="w-full h-full" // S'assurer que le conteneur de l'image prend tout l'espace
@@ -40,11 +41,12 @@ export const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }} // Animation vers le haut
         transition={{ delay: 0.6, duration: 0.7 }} // Délai et durée
       >
-        <img
-          src={HeroImage} // Chemin vers l'image
+        <Image
+          src={HeroImage}
           alt="Hero"
           width={imageSize.width}
           height={imageSize.height}
+          layout="intrinsic" // Choisissez le layout qui vous convient
         />
       </motion.div>
     </div>

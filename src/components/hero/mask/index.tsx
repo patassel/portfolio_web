@@ -7,7 +7,7 @@ import Image from "next/image";
 export const HeroSection = () => {
   // Lien direct de l'image depuis Google Drive
   const HeroImage =
-    "https://drive.google.com/uc?id=1CVle6Scn-mYCeCvq5XQl_TgalC2VPF6Y";
+    "https://drive.google.com/uc?export=view&id=1CVle6Scn-mYCeCvq5XQl_TgalC2VPF6Y";
 
   const [imageSize, setImageSize] = useState({ width: 402, height: 300 }); // Ajustez ici pour la hauteur
 

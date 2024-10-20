@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true, // Recommandé pour une meilleure vérification des erreurs
+  reactStrictMode: true,
   images: {
-    domains: ["drive.google.com"], // Ajoutez ici le domaine correct
+    domains: ["drive.google.com", "lh3.googleusercontent.com"],
   },
 };
 

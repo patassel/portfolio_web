@@ -40,13 +40,11 @@ export const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }} // Animation vers le haut
         transition={{ delay: 0.6, duration: 0.7 }} // Délai et durée
       >
-        <Image
+        <img
           src={HeroImage} // Chemin vers l'image
           alt="Hero"
           width={imageSize.width}
           height={imageSize.height}
-          layout="intrinsic" // Choisissez le layout qui vous convient
-          unoptimized
         />
       </motion.div>
     </div>

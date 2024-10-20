@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: true, // Optionnel, mais recommandé pour une meilleure vérification des erreurs
   images: {
-    domains: ["drive.google.com", "lh3.googleusercontent.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "drive.google.com", // L'hôte de votre image
+      },
+    ],
   },
 };
 

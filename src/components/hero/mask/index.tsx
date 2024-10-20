@@ -46,7 +46,6 @@ export const HeroSection = () => {
           alt="Hero"
           width={imageSize.width}
           height={imageSize.height}
-          layout="intrinsic" // Choisissez le layout qui vous convient
         />
       </motion.div>
     </div>

@@ -1,10 +1,31 @@
 /* styles/Home.module.css */
 .container {
-  @apply min-h-screen flex flex-col bg-darkGreen text-gray-100 relative; /* Utilisation du vert sombre pour le fond */
+  @apply min-h-screen flex flex-col bg-darkGreen text-gray-100 relative;
+  padding: 5px;
 }
 
 .header {
   @apply absolute top-0 left-0 right-0 flex justify-end p-4 bg-transparent z-10;
+}
+
+/* for mobile interface */
+@media (max-width: 640px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .left-section {
+    width: 100%;
+  }
+
+  .right-section {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* Ajoute d'autres styles si nécessaire */

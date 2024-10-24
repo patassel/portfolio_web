@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/portfolio_web",
   images: {
     remotePatterns: [
       {

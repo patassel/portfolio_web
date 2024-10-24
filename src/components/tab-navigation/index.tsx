@@ -38,7 +38,7 @@ const NavigationTabs: React.FC = () => {
     <header className="flex items-center bg-transparent w-full">
       {/* Container pour le logo */}
       <div className="flex items-center h-full">
-        <a href="/" className="h-full">
+        <a href="/portfolio_web" className="h-full">
           <Image
             src={logo}
             alt="Logo"

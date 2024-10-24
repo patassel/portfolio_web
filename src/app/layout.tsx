@@ -9,7 +9,7 @@ import ParticlesContainer from "@/components/animations/particles"; // Chemin ve
 import localFont from "next/font/local"; // Pour les polices locales
 import "./globals.css"; // Importez vos styles globaux
 import { motion } from "framer-motion";
-import styles from "../styles/Home.module.css"; // Importer vos styles
+import styles from "@/styles/home.module.css"; // Importer vos styles
 
 // Importer les polices locales
 const geistSans = localFont({

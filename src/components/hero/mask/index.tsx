@@ -1,27 +1,21 @@
 // HeroSection.jsx ou HeroSection.tsx
 
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion"; // Assurez-vous d'importer framer-motion si vous l'utilisez pour les animations
+import { motion } from "framer-motion";
 import Image from "next/image";
 import hero from "../../../../public/maskOff.png";
 
 export const HeroSection = () => {
-  // Lien direct de l'image depuis Google Drive
-  // const HeroImage =
-  //   "https://drive.google.com/uc?export=view&id=1CVle6Scn-mYCeCvq5XQl_TgalC2VPF6Y";
-
-  const HeroImage = "";
-
-  const [imageSize, setImageSize] = useState({ width: 402, height: 300 }); // Ajustez ici pour la hauteur
+  const [imageSize, setImageSize] = useState({ width: 402, height: 300 });
 
   useEffect(() => {
     const updateImageSize = () => {
       if (window.innerWidth >= 1600) {
-        setImageSize({ width: 522, height: 300 }); // Hauteur ajustée ici
+        setImageSize({ width: 522, height: 300 });
       } else if (window.innerWidth <= 1000) {
-        setImageSize({ width: 552, height: 300 }); // Hauteur ajustée ici
+        setImageSize({ width: 552, height: 300 });
       } else {
-        setImageSize({ width: 402, height: 300 }); // Hauteur ajustée ici
+        setImageSize({ width: 402, height: 300 });
       }
     };
 

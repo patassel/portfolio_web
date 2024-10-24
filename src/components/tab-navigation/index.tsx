@@ -1,10 +1,11 @@
-// src/components/tab-navigation/index.tsx
 "use client"; // Indique que ce composant doit être rendu côté client
 
 import React from "react";
 import { motion } from "framer-motion";
 import { useRouter, usePathname } from "next/navigation";
 import { useDialog } from "@/components/dialog/dialog_context"; // Importer le hook du contexte
+import Image from "next/image"; // Importer le composant Image
+import logo from "../../../public/logo.png"; // Assurez-vous que le chemin vers votre logo est correct
 
 const NavigationTabs: React.FC = () => {
   const router = useRouter();
@@ -34,8 +35,20 @@ const NavigationTabs: React.FC = () => {
   };
 
   return (
-    <div className="absolute top-0 left-0 right-0 flex justify-end p-4 bg-transparent z-10">
-      <nav>
+    <header className="flex items-center bg-transparent w-full">
+      {/* Container pour le logo */}
+      <div className="flex items-center h-full">
+        <a href="/" className="h-full">
+          <Image
+            src={logo}
+            alt="Logo"
+            className="h-full w-20 object-contain" // Permet à l'image de prendre toute la hauteur du header
+            priority={true} // Pour optimiser le chargement
+          />
+        </a>
+      </div>
+
+      <nav className="flex-grow flex justify-end">
         <ul className="flex space-x-8 text-gray-300">
           {["Projects", "Skills", "Blog", "Contact"].map((item) => {
             // Vérifie si l'onglet est actif
@@ -64,7 +77,7 @@ const NavigationTabs: React.FC = () => {
           })}
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 

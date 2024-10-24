@@ -8,9 +8,9 @@ import { HeroSection } from "../components/hero/mask"; // Assurez-vous que le ch
 
 export default function Home() {
   return (
-    <div className="flex flex-col sm:flex-row flex-grow">
+    <div className="flex flex-col sm:flex-row">
       {/* Section gauche */}
-      <div className="w-full sm:w-1/2 flex flex-col justify-center items-start p-6 sm:p-10 space-y-8">
+      <div className="w-full sm:w-1/2 flex flex-col justify-center items-start p-6 sm:p-10 space-y-1">
         <motion.h1
           className="text-3xl sm:text-5xl font-bold bg-gradient-to-t from-blue-500 to-purple-500 bg-clip-text text-transparent"
           initial={{ opacity: 0, y: -50 }}
@@ -52,7 +52,7 @@ export default function Home() {
 
       {/* Section droite avec l'image */}
       <motion.div
-        className="w-full sm:w-1/2 flex justify-center items-center mt-6 sm:mt-0"
+        className="sm:w-1/2 flex justify-center items-center h-full" // 'items-center' centre verticalement et 'justify-center' horizontalement
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.3 }}

@@ -47,7 +47,7 @@ import { Bitcoin, Cloud, Shell } from "lucide-react";
 
 // Informations personnelles
 const aboutInfo = {
-  title: "À propos de moi",
+  title: "About me",
   description:
     "<p>My name is Fayssal Ben Hammou, a passionate web developer based in Belgium with expertise in mobile application development. I have a deep-seated enthusiasm for technology and an unwavering commitment to continuous learning. My journey in the world of web development has been driven by a desire to create seamless user experiences, and I thrive on the challenges that come with transforming ideas into reality.</p> <p>With a background in both front-end and back-end development. My skill set includes designing intuitive user interfaces and creating efficient server-side solutions that power dynamic applications. I take pride in my ability to integrate various technologies to deliver high-quality products that meet user needs and expectations.</p> <p>In addition to my technical skills, I believe in the importance of collaboration and communication within development teams. I enjoy working in environments where ideas can flow freely, fostering innovation and creativity. As I continue to expand my knowledge and experience, I am excited to contribute to projects that challenge my abilities and push the boundaries of what is possible in both web and mobile development.</p>",
   info: [
@@ -245,7 +245,7 @@ export default function Page() {
                 : "bg-white text-black"
             } hover:bg-emerald-600 hover:text-white`}
           >
-            À propos de moi
+            About me
           </TabsTrigger>
           <TabsTrigger
             value="skills"

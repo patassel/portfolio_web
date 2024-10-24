@@ -48,7 +48,7 @@ const NavigationTabs: React.FC = () => {
         </a>
       </div>
 
-      <nav className="flex-grow flex justify-end">
+      <nav className="flex-grow flex justify-end mr-10">
         <ul className="flex space-x-8 text-gray-300">
           {["Projects", "Skills", "Blog", "Contact"].map((item) => {
             // Vérifie si l'onglet est actif

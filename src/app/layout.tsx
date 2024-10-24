@@ -51,11 +51,9 @@ const ClientComponent = ({ children }: { children: ReactNode }) => {
 
   return (
     <div className={styles.container}>
-      {" "}
       {/* Appliquer le style du conteneur */}
       {/* AppBar */}
       <header className={styles.header}>
-        {" "}
         {/* Appliquer le style du header */}
         <NavigationTabs />
       </header>

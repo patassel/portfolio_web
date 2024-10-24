@@ -5,7 +5,8 @@
 }
 
 .header {
-  @apply absolute top-0 left-0 right-0 flex justify-end p-4 bg-transparent z-10;
+  @apply top-0 left-0 right-0 flex justify-end p-4 bg-transparent z-10;
+  position: relative;
 }
 
 /* for mobile interface */

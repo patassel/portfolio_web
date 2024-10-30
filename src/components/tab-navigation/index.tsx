@@ -13,8 +13,10 @@ const NavigationTabs: React.FC = () => {
   const { handleOpenDialog } = useDialog(); // Obtenez la fonction pour ouvrir le dialog
 
   const handleClick = (item: string) => {
-    if (item === "Skills") {
-      router.push("/skills"); // Naviguer vers la page Skills
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+    if (item === "Skills" || item === "Projects") {
+      router.push(`${basePath}/${item.toLowerCase()}`);
     } else {
       let message;
       switch (item) {

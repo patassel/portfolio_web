@@ -14,6 +14,7 @@ import {
   FaSwift,
   FaAws,
   FaPython,
+  FaBlender,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -34,6 +35,7 @@ import {
   SiOracle,
   SiHostinger,
   SiBrevo,
+  SiAutocad,
 } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -91,12 +93,20 @@ const skillsInfo = {
   description: "Here are some of my knowledge areas in development.",
   skillList: [
     {
-      icon: <FaJava style={{ color: "white" }} />,
-      name: "Java",
-    },
-    {
       icon: <SiNextdotjs style={{ color: "white" }} />,
       name: "Next.js",
+    },
+    {
+      icon: <FaAndroid style={{ color: "white" }} />,
+      name: "Android",
+    },
+    {
+      icon: <FaSwift style={{ color: "white" }} />,
+      name: "Swift",
+    },
+    {
+      icon: <SiFlutter style={{ color: "white" }} />,
+      name: "Flutter",
     },
     {
       icon: <FaReact style={{ color: "white" }} />,
@@ -114,6 +124,10 @@ const skillsInfo = {
     {
       icon: <SiSpringboot style={{ color: "white" }} />,
       name: "SpringBoot",
+    },
+    {
+      icon: <FaJava style={{ color: "white" }} />,
+      name: "Java",
     },
     {
       icon: <FaJs style={{ color: "white" }} />,
@@ -152,28 +166,12 @@ const skillsInfo = {
       name: "Open AI",
     },
     {
-      icon: <FaAndroid style={{ color: "white" }} />,
-      name: "Android",
-    },
-    {
-      icon: <FaSwift style={{ color: "white" }} />,
-      name: "Android",
-    },
-    {
-      icon: <SiFlutter style={{ color: "white" }} />,
-      name: "Flutter",
-    },
-    {
       icon: <SiFirebase style={{ color: "white" }} />,
       name: "Firebase",
     },
     {
       icon: <Cloud style={{ color: "white" }} />,
       name: "Cloud",
-    },
-    {
-      icon: <FaAws style={{ color: "white" }} />,
-      name: "AWS",
     },
     {
       icon: <SiMicrosoftsqlserver style={{ color: "white" }} />,
@@ -203,6 +201,10 @@ const skillsInfo = {
     {
       icon: <SiAndroidstudio style={{ color: "white" }} />,
       name: "Android Studio",
+    },
+    {
+      icon: <SiAutocad style={{ color: "white" }} />,
+      name: "Autocad",
     },
     {
       icon: <SiHostinger style={{ color: "white" }} />,

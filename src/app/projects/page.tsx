@@ -1,21 +1,22 @@
-"use client";
+'use client';
 
-import ModelViewer from "@/components/3D/model-viewer";
-import { fadeIn } from "@/components/animations/fadeIn";
-import ProjectSection from "@/components/project/project-section";
-import { motion } from "framer-motion";
-import React from "react";
-import order1 from "../../../public/Order-Pro-Dashboard-Admin.png";
-import order2 from "../../../public/Order-Pro-Menu.png";
-import eden1 from "../../../public/eden-garden-library.png";
-import eden2 from "../../../public/eden-garden-sunflower.png";
-import travelTrip from "../../../public/travel-trip.png";
+import ModelViewer from '@/components/3D/model-viewer';
+import { fadeIn } from '@/components/animations/fadeIn';
+import ProjectSection from '@/components/project/project-section';
+import { motion } from 'framer-motion';
+import React from 'react';
+import order1 from '../../../public/Order-Pro-Dashboard-Admin.png';
+import order2 from '../../../public/Order-Pro-Menu.png';
+import eden1 from '../../../public/eden-garden-library.png';
+import eden2 from '../../../public/eden-garden-sunflower.png';
+import travelTrip from '../../../public/travel-trip.png';
+import kitty from '../../../public/mockup_KittyCover.png';
 
 export default function Page() {
   const scrollToProjects = () => {
-    const projectSection = document.getElementById("projects");
+    const projectSection = document.getElementById('projects');
     if (projectSection) {
-      projectSection.scrollIntoView({ behavior: "smooth" });
+      projectSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -24,7 +25,7 @@ export default function Page() {
       {/* En-tête avec animation de gauche à droite */}
       <motion.div
         key="header"
-        variants={fadeIn("left", 0.4)}
+        variants={fadeIn('left', 0.4)}
         initial="hidden"
         whileInView="show"
         exit="hidden"
@@ -47,7 +48,7 @@ export default function Page() {
           transition={{
             duration: 1.5,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: 'easeInOut',
           }}
         >
           <svg
@@ -70,8 +71,8 @@ export default function Page() {
       {/* Sections de projet avec animation de gauche à droite */}
       <div id="projects" className="w-full">
         <motion.div
-          key={"Eden Garden App"}
-          variants={fadeIn("left", 0.8)}
+          key={'Eden Garden App'}
+          variants={fadeIn('left', 0.8)}
           initial="hidden"
           whileInView="show"
           exit="hidden"
@@ -82,9 +83,9 @@ export default function Page() {
             title="Eden Garden App"
             description="Eden Garden App (first project at school) is available on Web, Android, Windows and coming soon to iOS. This app helps you manage your garden with features like plant statistics, maintenance instructions, and theme color customization."
             details={[
-              "View plant library with images and updated information.",
-              "Store your data securely with cloud storage.",
-              "Share your garden with the community and explore different plant varieties.",
+              'View plant library with images and updated information.',
+              'Store your data securely with cloud storage.',
+              'Share your garden with the community and explore different plant varieties.',
             ]}
             images={[eden1, eden2]}
             apkLink="https://github.com/patassel/eden_garden_app"
@@ -92,8 +93,8 @@ export default function Page() {
         </motion.div>
 
         <motion.div
-          key={"Order Pro"}
-          variants={fadeIn("left", 0.8)}
+          key={'Order Pro'}
+          variants={fadeIn('left', 0.8)}
           initial="hidden"
           whileInView="show"
           exit="hidden"
@@ -104,9 +105,9 @@ export default function Page() {
             title="Order Pro"
             description="Order Pro is built for the hospitality industry. It streamlines operations for restaurants, food trucks, and coffee houses by managing roles for Administrator, Cook/Order Taker, and Customer."
             details={[
-              "Administrator: Manage staff, track inventory, set delivery options, and more.",
-              "Cook/Order Taker: Real-time order tracking, communicate with staff, track progress.",
-              "Customer: Locate establishments, view menus, order via QR code, and choose delivery.",
+              'Administrator: Manage staff, track inventory, set delivery options, and more.',
+              'Cook/Order Taker: Real-time order tracking, communicate with staff, track progress.',
+              'Customer: Locate establishments, view menus, order via QR code, and choose delivery.',
             ]}
             images={[order1, order2]}
             apkLink="https://github.com/patassel/Order-Pro-Overview"
@@ -114,8 +115,8 @@ export default function Page() {
         </motion.div>
 
         <motion.div
-          key={"Travel Trip"}
-          variants={fadeIn("left", 0.8)}
+          key={'Travel Trip'}
+          variants={fadeIn('left', 0.8)}
           initial="hidden"
           whileInView="show"
           exit="hidden"
@@ -134,8 +135,29 @@ export default function Page() {
         </motion.div>
 
         <motion.div
-          key={"3D Model"}
-          variants={fadeIn("left", 0.8)}
+          key={'Kitty Scanner Pro'}
+          variants={fadeIn('left', 0.8)}
+          initial="hidden"
+          whileInView="show"
+          exit="hidden"
+          viewport={{ once: false }}
+          className="h-screen flex items-center justify-center"
+        >
+          <ProjectSection
+            title="Kitty Scanner Pro"
+            description="Kitty Scanner Pro, The Ultimate AI-Powered Document Scanning Solution."
+            details={[
+              'Kitty Scanner Pro is a cutting-edge document scanning and management application that leverages artificial intelligence to help users digitize, analyze, and organize their documents with ease.',
+              'Designed for both personal and professional use, this app simplifies document processing by offering high-quality scanning, intelligent text analysis, automatic summarization, and seamless document management capabilities.',
+            ]}
+            images={[kitty]}
+            apkLink="https://patassel.github.io/OfficialTravelTrip.github.io/"
+          />
+        </motion.div>
+
+        <motion.div
+          key={'3D Model'}
+          variants={fadeIn('left', 0.8)}
           initial="hidden"
           whileInView="show"
           exit="hidden"

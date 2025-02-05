@@ -15,7 +15,7 @@ const NavigationTabs: React.FC = () => {
   const handleClick = (item: string) => {
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
-    if (item === 'Skills' || item === 'Projects') {
+    if (item === 'Skills' || item === 'Projects' || item == 'Contact') {
       router.push(`${basePath}/${item.toLowerCase()}`);
     } else {
       let message;
